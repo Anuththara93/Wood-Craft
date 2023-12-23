@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="profile_page.css">
 
   <title>Home/ Profile</title>
-
 </head>
 
 <body>
@@ -24,6 +23,12 @@
               </ol>
             </nav>
           </div>
+
+          <div class="card">
+            <div class="profile-container">
+              <img src="image/profile-img.png" alt="Profile" class="rounded-circle">
+              <h2>Nethan Moris</h2>
+            </div>
           
         <div class="tab-container">
             <div class="tab-header">
@@ -84,6 +89,13 @@
                     <h5>Change Your Details Here</h5>
 
                     <form>
+                      <div class="row mb-3">
+                        <label for="profilePicture" class="col-md-4 col-lg-3 col-form-label">Profile Picture</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="profilePicture" type="file" class="form-control" id="profilePicture">
+                        </div>
+                      </div>
+                      
                         <div class="row mb-3">
                           <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Full Name</label>
                           <div class="col-md-8 col-lg-9">
@@ -151,6 +163,7 @@
                 <!-- <div id="profile-change-password" class="tab-pane"> </div> -->
             </div>
         </div>
+      </div>
 
   </main>
 
