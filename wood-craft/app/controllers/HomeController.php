@@ -22,10 +22,11 @@ class HomeController {
             header("Location: index.php?action=login");
             exit;
         }
-        
+
         $userData = $this->userModel->getUserById($userId);
 
         include '../app/views/profile_page.php';
     }
 }
+
 ?>
