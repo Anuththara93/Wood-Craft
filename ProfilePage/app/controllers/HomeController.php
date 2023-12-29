@@ -16,7 +16,13 @@ class HomeController {
 
     public function profile() {
         
-        $userId = 1;
+        $userId = $_SESSION['user_id'] ?? null;
+
+        if (!$userId) {
+            header("Location: index.php?action=login");
+            exit;
+        }
+        
         $userData = $this->userModel->getUserById($userId);
 
         include '../app/views/profile_page.php';
